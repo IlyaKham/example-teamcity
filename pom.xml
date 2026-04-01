@@ -6,26 +6,18 @@
 	<groupId>org.netology</groupId>
 	<artifactId>plaindoll</artifactId>
 	<packaging>jar</packaging>
-	<version>0.0.2-SNAPSHOT</version> <!-- Добавлен -SNAPSHOT -->
+	<version>0.0.2</version>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
-	
 	<distributionManagement>
 		<repository>
-			<id>nexus</id>
-			<name>Nexus Releases</name>
-			<url>http://213.165.216.254:8081/repository/maven-releases/</url>
+				<id>nexus</id>
+				<url>http://213.165.216.254:8081/repository/maven-releases</url>
 		</repository>
-		<snapshotRepository>
-			<id>nexus</id>
-			<name>Nexus Snapshots</name>
-			<url>http://213.165.216.254:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>
 	</distributionManagement>
-	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
